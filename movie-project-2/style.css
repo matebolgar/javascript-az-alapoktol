@@ -1,0 +1,316 @@
+/* =================================
+  Element Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 1em/1.5 "Roboto", sans-serif;
+  color: #222;
+  background: #f6f7f7;
+  padding-top: 145px;
+  padding-bottom: 3em;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input {
+  font-size: 1.12em;
+  height: 46px;
+  padding-bottom: 1em;
+  padding-left: 0;
+  background: none;
+  border: none;
+  outline: 0;
+  border-bottom: 4px solid #e4e4e4;
+  transition: border-color 0.4s;
+}
+
+input ~ input {
+  margin-left: 5px;
+}
+
+input:focus {
+  border-color: #c1c1c1;
+}
+
+button {
+  width: 40px;
+  height: 35px;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  z-index: 2000;
+}
+
+/* =================================
+  Page Components
+==================================== */
+
+.main-title {
+  font-size: 1.4em;
+  line-height: 80px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.search-form input:last-of-type {
+  margin-right: -40px;
+}
+.search-form input:nth-of-type(1) {
+  width: 65%;
+}
+.search-form input:nth-of-type(2) {
+  width: 35%;
+}
+.search-form input:only-of-type {
+  width: 100%;
+  padding-right: 35px;
+}
+
+.search-button {
+  float: right;
+  margin-right: -10px;
+}
+
+.icn-search {
+  font-weight: 700;
+}
+
+.icon-help,
+.icn-movie {
+  font-size: 6em;
+  margin-bottom: 12px;
+  color: #dfdfdf;
+  display: block;
+}
+
+/* MOVIE LIST COMPONENTS -------- */
+
+.no-movies,
+.desc {
+  color: #b0b0b0;
+  height: 140px;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 1.25em;
+}
+
+.movie-list li {
+  margin: 1.925em 0 0;
+}
+
+.movie-list a {
+  display: block;
+  margin: auto;
+}
+
+.movie-title {
+  display: block;
+  font-size: 1.1em;
+  line-height: 1.2;
+  color: #000;
+  font-weight: 500;
+}
+
+.movie-year {
+  color: #9d9d9d;
+}
+
+.poster-wrap {
+  background-color: #fff;
+  margin-bottom: 0.8em;
+  position: relative;
+}
+
+.poster-placeholder {
+  color: #dadada;
+  font-size: 5em;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+/* =================================
+  Layout Styles
+==================================== */
+
+.inner,
+.main-content {
+  width: 90%;
+  max-width: 1025px;
+  margin: auto;
+}
+
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  min-height: 80px;
+  z-index: 1000;
+}
+
+/* =================================
+  Helper Classes
+==================================== */
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.is-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 0) and (max-width: 549px) {
+  .movie-list li {
+    text-align: center;
+  }
+}
+
+@media (min-width: 550px) {
+  .movie-list li {
+    float: left;
+    width: 50%;
+  }
+
+  .movie-list .desc {
+    width: 100%;
+    float: none;
+  }
+
+  .poster-wrap {
+    height: 290px;
+    border: 1px solid white;
+    overflow: hidden;
+  }
+
+  .movie-poster {
+    width: 100%;
+    min-height: 100%;
+    -webkit-transition: -webkit-transform 0.4s ease-out;
+    transition: transform 0.4s ease-out;
+  }
+
+  .poster-wrap:hover .movie-poster {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  .movie-title {
+    padding-right: 1.25em;
+  }
+}
+
+@media (min-width: 769px) {
+  body {
+    padding-top: 115px;
+  }
+
+  .main-title {
+    float: left;
+  }
+
+  .search-form {
+    width: 422px;
+    float: right;
+    margin-top: 34px;
+  }
+
+  .movie-list li {
+    width: 33.333333333%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 999px) {
+  .movie-list li:nth-of-type(3n + 1) {
+    clear: left;
+  }
+}
+
+@media (min-width: 1000px) {
+  .movie-list li {
+    width: 25%;
+  }
+
+  .movie-list li:nth-of-type(4n + 1) {
+    clear: left;
+  }
+}
+
+.description-header-background {
+  background-color: #444;
+  color: white;
+  padding-bottom: 30px;
+}
+
+.desc-movie-rating {
+  color: grey;
+}
+
+.poster-div {
+  float: left;
+  margin-right: 50px;
+  position: absolute;
+  top: 20%;
+  padding: 10px 10px;
+  background-color: white;
+}
+
+.imdb-link {
+  background-color: green;
+  color: white;
+  padding: 10px 10px;
+}
+
+.desc-plot {
+  margin-bottom: 50px;
+}
+
+.description-container {
+  position: relative;
+  left: 35%;
+  padding-top: 50px;
+}
+
+.back-to-search {
+  color: grey;
+}
+
+.single-movie-btn:hover {
+  cursor: pointer;
+}

@@ -1,1 +1,1 @@
-# php-course
+# JavaScript az alapoktól

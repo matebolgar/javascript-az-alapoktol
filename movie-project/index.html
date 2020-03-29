@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Movie Search</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="main-header">
+      <div class="inner">
+        <h1 class="main-title">MovieSearch</h1>
+        <form class="search-form" id="search">
+          <label class="is-hidden" for="search">Search a title</label>
+          <input
+            type="search"
+            name="search"           
+            placeholder="Search a Title..."
+          />
+          <label class="is-hidden" for="year">Any Year</label>
+          <input
+            type="text"
+            maxlength="4"
+            name="year"
+            placeholder="Year"
+          />
+          <button type="submit" id="submit" class="search-button">
+            <i class="material-icons icn-search">search</i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="main-content clearfix">
+      <span class="movie-count"></span>
+     <div class="row">
+      <div class="col-8">
+        <ul id="movies" class="movie-list"> 
+        </ul>
+      </div>
+      <div class="col-3">
+        <div id="movie-description"></div>
+      </div>
+     </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
