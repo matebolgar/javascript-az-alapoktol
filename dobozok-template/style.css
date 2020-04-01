@@ -1,0 +1,94 @@
+#element-one {
+  width: 100px;
+  height: 100px;
+  background-color: darkcyan;
+}
+
+#element-two {
+  width: 100px;
+  height: 100px;
+  background-color: firebrick;
+}
+
+#element-three {
+  background-color: darkolivegreen;
+}
+
+#element-four {
+  background-color: chocolate;
+}
+
+#element-five {
+  background-color: sandybrown;
+}
+
+#element-six {
+  background-color: forestgreen;
+}
+
+#element-seven {
+  background-color: cadetblue;
+}
+
+#element-eight {
+  background-color: seagreen;
+}
+
+#element-nine {
+  background-color: sienna;
+}
+
+.container {
+  width: 400px;
+}
+
+.shape {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 10px;
+  border-radius: 3px;
+}
+
+.text {
+  display: table;
+  margin: auto;
+  font-size: 50px;
+  font-family: sans-serif;
+  line-height: 100px;
+}
+
+.parent-table {
+    display: table;
+    text-align: center;
+}
+
+.child-table {
+    font-size: 30px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.blur {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.hidden {
+  display: none;
+}
+
+.w-95 {
+  width: 95px;
+}
+
+.w-100 {
+  width: 100px;
+}
+
+.box5style {
+  border-radius: 50%;
+}
