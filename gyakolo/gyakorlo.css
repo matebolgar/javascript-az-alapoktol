@@ -1,0 +1,92 @@
+*{
+    padding:0;
+    margin:0;
+}
+section{
+    border:2px solid black;
+    margin: 2% auto;
+    
+}
+.cars-card,
+.bee-card,
+.meerkat-card
+{ background-color: aqua;
+    border:2px solid black;
+ 
+     margin:2px;
+     padding:3px;
+    margin: 2% auto;
+    width: 50%;
+}
+section{
+    background-color:whitesmoke;
+    box-shadow: 2px 2px 2px  3px grey;
+    width: 50%;
+}  
+h3{
+    text-align: center;
+}
+
+#element-one{
+    background-color: rgb(219, 135, 26);
+    font-size: 50px;
+    display: table;
+    margin: 2% auto;
+    height: 100px;
+   
+    width: 100px;
+}
+#element-two{
+    background-color: purple;
+    border: 2px solid black;
+    color:white;
+    width: 100px;
+    display:table;
+    margin:2% auto;
+
+}
+
+.text{
+    display: table;
+    margin: auto;
+    font-size: 50px;
+    font-family: sans-serif;
+    line-height: 100px;
+}
+.blur {
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+  }
+  #focus,
+  #nodes{
+      border: 2px solid red;
+      margin:2% auto;
+      padding:2%;
+      width: 50%;
+  }
+
+  .lines{
+    padding-top: 0;
+    line-height: calc(1rem + (1rem * .25));
+    background: linear-gradient(to bottom, lightgray, lightgray 50%, cyan 50%, cyan );
+    background-size: auto calc(2rem + (2rem * .25));
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-attachment: local;
+
+    margin:0 50%;
+    }
+
+    textarea{
+        background-color: #DC143C ; 
+        color: red;
+        padding-top: 0;
+        line-height: calc(1rem + (1rem * .25));
+        background: linear-gradient(to bottom, lightgray, lightgray 50%, cyan 50%, cyan );
+        background-size: auto calc(2rem + (2rem * .25));
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-attachment: local;}
