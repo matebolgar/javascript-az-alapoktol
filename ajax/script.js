@@ -1,6 +1,8 @@
 /*
  * AJAX kérések
  * Asynchronous JavaScript and XML
+ * 
+ * https://jsonplaceholder.typicode.com/posts
  */
 
 document.getElementById("login").onclick = function() {
@@ -98,6 +100,29 @@ function sendRequest2(url, method, body) {
 }
 
 
+/*-------------------------*/
+/*-------------------------*/
+
+document.getElementById('fetch-post').onclick = function(){
+
+  let xhr = new XMLHttpRequest;
+
+  xhr.onreadystatechange = function(){
+    if(xhr.readyState === 4 && xhr.status === 200){
+      let posts =JSON.parse( xhr.responseText) ;
+      
+      let postListHTML = '';
+      for(let post of posts){
+postListHTML += '<p>' + post.title +'</p>';
+   
+      }
+
+      document.getElementById('post-list-containers').innerHTML = postListHTML;
+    }
+  }
+  xhr.open('GET', 'https://jsonplaceholder.typicode.com/posts');
+  xhr.send();
+}
 
 
 

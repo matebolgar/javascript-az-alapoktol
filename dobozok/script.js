@@ -94,6 +94,22 @@ Kattintásra alakítsa kör alakúra az összes dobozt.
 // console.log(document.querySelector('.container').children);
 // console.log(document.querySelectorAll('.shape'));
 
+let radius=false;
+document.getElementById("element-five").onclick = function() {
+  radius=!radius
+
+  var boxes = document.querySelectorAll(".shape");
+
+  for (var box of boxes) {
+    if(radius){box.style.borderRadius = "50%";}
+    else{
+      box.style.borderRadius="";
+
+    }
+  }
+
+};
+/*
 document.getElementById("element-five").onclick = function() {
   var boxes = document.querySelectorAll(".shape");
 
@@ -101,7 +117,7 @@ document.getElementById("element-five").onclick = function() {
     box.style.borderRadius = "50%";
   }
 };
-
+*/
 /*
 6. doboz:
 Form submit eseményre módosítsuk a doboz tartalmát az input mezőbe írt értékkel

@@ -1,15 +1,3 @@
-/*
-  Product
-
-  Create
-  Read
-  Update
-  Delete
-
-  CRUD
-
-*/
-
 var state = {
   products: [
     {
