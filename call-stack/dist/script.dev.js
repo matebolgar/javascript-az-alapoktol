@@ -1,7 +1,8 @@
+"use strict";
+
 /*
  * Call stack
  */
-
 function susdMegARantottat() {
   console.log("Önts olajat a serpenyőbe");
   console.log("Adj hozzá 3 tojást");

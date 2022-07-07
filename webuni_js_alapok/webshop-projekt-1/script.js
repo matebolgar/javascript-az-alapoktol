@@ -1,0 +1,9 @@
+/*
+    Product
+
+    Create
+    Read
+    Update
+    Delete
+    
+*/
