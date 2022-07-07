@@ -14,31 +14,29 @@
     <div class="mb-3"></div>
     <div class="container">
       <div class="row">
-        <div class="col-6">
+        <div id="full-login-form" class="col-6">
           <div class="card p-3">    
             <h1>Bejelentkezés</h1>   
             <form id="login" class="p-3">
               <label class="w-100">
                 Email:
-                <input type="text" name="email" class="form-control"/>
+                <input type="text" value="eve.holt@reqres.in" name="email" id="email" class="form-control"/>
               </label>
               <label class="w-100">
                 Jelszó:
-                <input type="password" name="password" class="form-control"/>
+                <input type="password" value="cityslicka" name="password" id="password" class="form-control"/>
               </label>
-              <button type="submit" class="btn btn-primary">Küldés</button>
-              <div id="message" class="float-right mt-2">
+              <button type="submit" id="submit" class="btn btn-primary">Küldés</button>
+              <div id="message" class="float-right mt-2 d-none">
+                <div class="spinner-border text-primary" role="status">
+                  <span class="sr-only">Loading...</span>
+                </div>
               </div>
             </form>
           </div>
         </div>
         <div class="col-6">
           <div id="user-list-container">
-            <ul class="list-group">
-              <li class="list-group-item">George Bluth</li>
-              <li class="list-group-item">Janet Weaver</li>
-              <li class="list-group-item">Emma Wong</li>
-            </ul>
           </div>
         </div>
       </div>
